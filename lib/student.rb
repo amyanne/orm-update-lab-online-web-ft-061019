@@ -66,7 +66,7 @@ class Student
   end
   
   def self.find_by_name(name)
-    self.all.find{|student| 
+    self.all.find{|student| student.name == name 
   end
  
 end
