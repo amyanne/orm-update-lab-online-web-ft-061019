@@ -58,8 +58,8 @@ class Student
   end
   
   def self.new_from_db(row)
-    id, name, grade = row
-    new_student = Student.new(id, name, grade)
+  iid, name, grade = row
+    new_student = Student.new(id, name, grade) 
   end
 
 end
