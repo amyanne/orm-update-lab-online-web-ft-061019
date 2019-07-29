@@ -50,5 +50,8 @@ class Student
 
     DB[:conn].execute(sql_update, self.name, self.grade, self.id)
   end
+  
+  self.create 
+end 
 
 end
