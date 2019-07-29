@@ -11,7 +11,6 @@ class Student
     @name = name
     @grade = grade
     @id = id
-    @@all << self
   end 
   
   def self.all
@@ -48,6 +47,7 @@ class Student
     
       @id = DB[:conn].execute("SELECT last_insert_rowid() FROM students")[0][0]
     end
+    @@all << self
   end 
   
   def update
